@@ -1,5 +1,4 @@
 from llava.model.builder import load_pretrained_model
-import ipdb
 
 
 if __name__ == '__main__':
@@ -9,6 +8,4 @@ if __name__ == '__main__':
 
     model = load_pretrained_model(model_name=model_name, model_path=model_path,
                                   load_4bit=False, device='cuda', model_base=None)
-
-    ipdb.set_trace()
-    a = 0
+    print(model)
